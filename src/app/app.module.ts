@@ -6,10 +6,11 @@ import { AppComponent } from './app.component';
 
 import { ActionReducerMap, StoreModule } from '@ngrx/store';
 import { reducer } from './reducers/tutorial.reducer';
+import { ReadComponent } from './read/read.component';
+import { CreateComponent } from './create/create.component';
+
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
+  declarations: [AppComponent, ReadComponent, CreateComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
